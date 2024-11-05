@@ -1,0 +1,79 @@
+.box-contain-table {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contain_loaded_file {
+    display: flex;
+    border: 1px solid #032B91;
+    border-radius: 3px;
+    flex-direction: column;
+    max-height: 350px;
+    overflow-y: auto;
+    margin: 0 50px;
+}
+
+.row-of-table {
+    height: 30px;
+    width: auto;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.row-of-table th, .row-of-table td {
+    border-right: 1px solid #032B91;
+    color: #032B91;
+    padding: 0 5px;
+    position: relative;
+}
+
+.row-of-table td {
+    color: #000;
+}
+
+.row-of-table th:last-child, .row-of-table td:last-child {
+    border-right: 0;
+}
+
+.contain_loaded_file tr {
+    border-top: 1px solid #032B91;
+}
+
+.contain_loaded_file thead tr:first-child {
+    border-top: 0;
+}
+
+.c1-of-table {
+    width: 5%;
+    text-align: center;
+}
+
+.c2-of-table {
+    width: 45%;
+}
+
+.c3-of-table, .c5-of-table {
+    width: 20%;
+}
+
+.c4-of-table {
+    width: 10%;
+}
+
+.three-dots-more-detail {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.three-dots-more-detail:hover {
+    fill: #1c53df;
+}

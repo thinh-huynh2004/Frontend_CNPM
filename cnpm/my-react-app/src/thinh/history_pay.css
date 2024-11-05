@@ -1,0 +1,97 @@
+.full_box_history_pay {
+    width: 98%;
+    display: flex;
+    max-height: 240px;
+    margin: 20px 0;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.history_pay__table {
+    border: 2px solid #032b91;
+    border-radius: 5px;
+    margin: 0 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+
+.history_pay__table thead {
+    border-bottom: 2px solid #032b91;
+}
+
+.history_pay__table_row {
+    display: flex;
+    flex-direction: row;
+}
+
+thead .history_pay__table_row th {
+    font-size: 16px;
+    line-height: 40px;
+    height: 40px;
+    font-weight: 800;
+    color: #032b91;
+    padding: 0;
+}
+
+tbody .history_pay__table_row td p, tbody .history_pay__table_row td {
+    font-size: 16px;
+    line-height: 40px;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+tbody .history_pay__table_row td p {
+    margin: 0 20px;
+    border-bottom: 1px solid #000;
+}
+
+tbody .history_pay__table_row:last-child td p {
+    border: none;
+}
+
+.history_pay__table_column1 {
+    width: 55%;
+    border-right: 2px solid #032b91;
+}
+
+.history_pay__table_column2 {
+    width: 25%;
+    border-right: 2px solid #032b91;
+    text-align: center;
+}
+
+.history_pay__table_column3 {
+    width: 20%;
+    text-align: center;
+}
+
+tbody .history_pay__table_row .history_pay__table_column3 p {
+    color: #0083e0;
+    cursor: pointer;
+}
+
+tbody .history_pay__table_row .history_pay__table_column3 p:hover {
+    color: #041542;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 100;
+}
+
+ .modal--visible {
+    transform: translateY(0);
+}
+
+.modal--hidden {
+    transform: translateY(100%);
+}
